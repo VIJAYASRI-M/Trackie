@@ -72,7 +72,6 @@ export const useStreaks = () => {
 
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
-    const yesterdayStr = yesterday.toISOString().split("T")[0];
 
     return lastCompleted < today && streakData.currentStreak > 0;
   };
