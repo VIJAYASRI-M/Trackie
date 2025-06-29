@@ -1,0 +1,65 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-bar h2 {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-bar span {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.container {
+  border-radius: 8px;
+  height: auto;
+  padding: 16px;
+  box-sizing: border-box;
+  margin: 16px auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.container span {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container p {
+  font-size: large;
+  text-align: center;
+}
+
+.main-content {
+  height: 100vh;
+  width: 100%;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 40%;
+  }
+}
