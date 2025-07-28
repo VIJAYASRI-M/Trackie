@@ -21,9 +21,6 @@ jobs:
 
       - name: Build App
         run: npm run build
-
-      - name: start Server
-        run: npm run start 
             
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v4
