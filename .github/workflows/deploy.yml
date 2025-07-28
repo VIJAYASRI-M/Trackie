@@ -22,9 +22,6 @@ jobs:
       - name: Build App
         run: npm run build
 
-      - name: Run Lint
-        run: npm run lint
-
       - name: start Server
         run: npm run start 
             

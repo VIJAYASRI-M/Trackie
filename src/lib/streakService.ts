@@ -89,7 +89,7 @@ export const calculateStreaks = async (): Promise<{
 
     let currentStreak = 0;
     const today = new Date();
-    let checkDate = new Date(today);
+    const checkDate = new Date(today);
 
     const todayStr = today.toISOString().split("T")[0];
     const todayCompleted = completedDays.some((day) => day.date === todayStr);
