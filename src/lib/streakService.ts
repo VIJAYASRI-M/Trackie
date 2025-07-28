@@ -4,7 +4,7 @@ import type { DailyTarget, StreakData } from "../types/streak";
 export const getTodaysTarget = async (
   defaultTarget: number = 40
 ): Promise<{ data: DailyTarget | null; error: any }> => {
-  const today = new Date().toISOString().split("T")[0];
+  const today = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }).split(",")[0];
 
   const { data: existing, error: fetchError } = await supabase
     .from("daily_targets")
